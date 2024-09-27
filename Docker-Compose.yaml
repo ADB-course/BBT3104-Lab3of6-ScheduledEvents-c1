@@ -14,7 +14,7 @@ services:
       - ./container-volumes/mysql/etc-mysql/my.cnf:/etc/mysql/my.cnf
       # To store the server's data persistently in the host
       - ./container-volumes/mysql/var-lib-mysql:/var/lib/mysql
-      # To run the SQL scripts used to create the required databases
+      # To run the SQL scripINSERT INTO `customer_service_ticket`
       - ./container-volumes/mysql/init-scripts:/docker-entrypoint-initdb.d/
     command: >
       /bin/bash -c "
